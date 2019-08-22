@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <View
+        android:id="@+id/view_point"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_audio_record"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_bg_start_audio"
+        android:drawableStart="@mipmap/ic_start_audio_record"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp"
+        android:text="录音乐"
+        android:textColor="#2c2c2c"
+        app:layout_constraintBottom_toBottomOf="@id/view_point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_video_record"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shape_bg_start_audio"
+        android:drawableStart="@mipmap/ic_start_audio_record"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp"
+        android:text="录视频"
+        android:textColor="#2c2c2c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_point" />
+</android.support.constraint.ConstraintLayout>

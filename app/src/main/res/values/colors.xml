@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c2c2c</color>
+    <color name="colorPrimaryDark">#2c2c2c</color>
+    <color name="colorAccent">#2c2c2c</color>
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_audio">#FF3A2B20</color>
+    <color name="bg_play">#FF877B71</color>
+    <color name="bg_black_light">#EDEDED</color>
+    <color name="bg_gray_text">#877B71</color>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_play">
+
+    <TextView
+        android:id="@+id/tv_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="音乐名称"
+        android:textColor="@color/bg_white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_play_disc_round"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_music_name" />
+
+    <ImageView
+        android:id="@+id/iv_play_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_play_disc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_music_name" />
+
+    <ImageView
+        android:id="@+id/iv_play_needle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@null"
+        android:rotation="-30"
+        android:src="@mipmap/ic_play_needle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_music_name" />
+
+    <Chronometer
+        android:id="@+id/tv_audio_time"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="48dp"
+        android:format="00:00:00"
+        android:gravity="center"
+        android:textColor="@color/bg_white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_play"
+        app:layout_constraintEnd_toStartOf="@id/sb_play"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sb_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/iv_play"
+        app:layout_constraintEnd_toStartOf="@id/tv_total_length"
+        app:layout_constraintStart_toEndOf="@id/tv_audio_time" />
+
+    <TextView
+        android:id="@+id/tv_total_length"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/bg_white"
+        app:layout_constraintBottom_toTopOf="@id/iv_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sb_play" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_play_single"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_play"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

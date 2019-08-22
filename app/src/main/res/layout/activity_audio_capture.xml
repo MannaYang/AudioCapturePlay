@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_audio">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="录音乐"
+        android:textColor="@color/bg_white"
+        android:textSize="36sp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/tv_audio_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:format="00:00:00"
+        android:gravity="center"
+        android:textColor="@color/bg_white"
+        android:textSize="36sp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <com.manna.audio.widget.WaveView
+        android:id="@+id/dial_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_audio_time" />
+
+    <TextView
+        android:id="@+id/tv_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text=""
+        android:textColor="@color/bg_white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dial_view" />
+
+    <ImageView
+        android:id="@+id/iv_stop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_stop_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_stop"
+        app:layout_constraintEnd_toStartOf="@id/iv_start"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_start_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_start"
+        app:layout_constraintEnd_toStartOf="@id/iv_detail"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/iv_stop" />
+
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_detail_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/iv_start" />
+
+    <TextView
+        android:id="@+id/tv_stop"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center|bottom"
+        android:text="完成"
+        android:textColor="@color/bg_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_start"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center|bottom"
+        android:text="开始"
+        android:textColor="@color/bg_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_detail"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/tv_stop" />
+
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center|bottom"
+        android:text="录音文件"
+        android:textColor="@color/bg_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/tv_start" />
+</android.support.constraint.ConstraintLayout>
