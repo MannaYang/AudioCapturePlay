@@ -1,0 +1,2 @@
+# AudioCapturePlay
+基于AudioRecord录制双声道原始pcm音频，使用开源库lame实时转换原始pcm音频为MP3格式音频，最后采用Service、MediaPlayer播放MP3，提供录制音频计时器显示，音频音量分贝值显示，音频频谱显示，录制状态控制、播放状态控制等
