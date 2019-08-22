@@ -21,4 +21,22 @@
 ## 公共库
   1. 包含录音控制类、lame编解码cpp文件、编译so文件、Service播放控制类,使用方式参见app中AudioCaptureActivity.class
 ## 截图展示
+  录制开始、暂停、完成 ：
+    
+  ![image](https://github.com/MannaYang/AudioCapturePlay/blob/master/screenshot/ic_start.png)
   
+  音频文件 ：
+    
+  ![image](https://github.com/MannaYang/AudioCapturePlay/blob/master/screenshot/ic_audio_file.png)
+  
+  播放准备 ：
+    
+  ![image](https://github.com/MannaYang/AudioCapturePlay/blob/master/screenshot/ic_play_start.png)
+  
+  播放中 ：
+    
+  ![image](https://github.com/MannaYang/AudioCapturePlay/blob/master/screenshot/ic_playing.png)
+  
+## 感谢开源
+  1. 音频频谱柱状图  https://github.com/zhaolewei/MusicVisualizer
+  2. lame编解码库   https://sourceforge.net/projects/lame/files/lame 
