@@ -40,3 +40,9 @@
 ## 感谢开源
   1. 音频频谱柱状图  https://github.com/zhaolewei/MusicVisualizer
   2. lame编解码库   https://sourceforge.net/projects/lame/files/lame 
+
+## 我的个人新球
+
+  免费加入星球一起讨论项目、研究新技术,共同成长!
+  
+![image](https://github.com/MannaYang/AudioCapturePlay/blob/master/screenshot/xiaomiquan.png)
